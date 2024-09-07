@@ -117,7 +117,7 @@ public class ShoppingList extends Fragment {
         String documentId = item.getId();
 
         if (documentId != null && !documentId.isEmpty()) {
-            db.collection("FoodItems").document(documentId).delete()
+            db.collection("ShoppingList").document(documentId).delete()
                     .addOnSuccessListener(aVoid -> {
                         shoppingList.remove(position);
                         mAdapter.notifyItemRemoved(position);
