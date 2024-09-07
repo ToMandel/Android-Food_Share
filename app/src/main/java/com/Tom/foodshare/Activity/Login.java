@@ -251,20 +251,12 @@ public class Login extends AppCompatActivity {
     }
     private void addDefaultItemsToDB(User user) {
         ArrayList<FoodItem> defaultItems = new ArrayList<>();
-        int age = Integer.parseInt(user.getAge());
-        if (age <= 20) {
             defaultItems.add(new FoodItem("Butter", 200, "Gram", "https://dairyfarmersofcanada.ca/sites/default/files/product_butter_thumb.jpg", user, null));
             defaultItems.add(new FoodItem("Flour", 2, "Kilo", "https://www.apk-inform.com/uploads/Redakciya/2019/%D0%98%D1%8E%D0%BD%D1%8C/%D0%BC%D1%83%D0%BA%D0%B0.jpg", user, null));
             defaultItems.add(new FoodItem("Eggs", 12, "Units", "https://chriskresser.com/wp-content/uploads/iStock-172696992.jpg", user, null));
-        } else {
-            defaultItems.add(new FoodItem("Butter", 200, "Gram", user, null));
-            defaultItems.add(new FoodItem("Flour", 2, "Kilo", user, null));
-            defaultItems.add(new FoodItem("Eggs", 12, "Units", user, null));
-        }
-
         for (FoodItem item : defaultItems) {
-            String documentId = db.collection("ShoppingList").document().getId();  // Generate a Firestore document ID
-            item.setId(documentId);  // Set the same ID in the FoodItem object
+            String documentId = db.collection("ShoppingList").document().getId();
+            item.setId(documentId);
             db.collection("ShoppingList").document(documentId).set(item)
                     .addOnSuccessListener(aVoid -> {
                     })
