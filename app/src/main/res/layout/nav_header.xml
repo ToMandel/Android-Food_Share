@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/foodshare_logo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nav_header_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:paddingTop="8dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/first_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nav_header_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+        android:layout_gravity="start"
+        android:text="@string/last_name" />
+
+</LinearLayout>

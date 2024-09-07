@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage_food_stock"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="My Food Stock" />
+
+        <item
+            android:id="@+id/nav_manage_shopping_list"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="My Shopping List" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <item android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_play_for_work_black_24dp"
+                android:title="Switch User"/>
+        </menu>
+    </item>
+</menu>

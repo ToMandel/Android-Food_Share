@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_Shopping_List"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Shopping List"/>
+    <item
+        android:id="@+id/nav_Food_stock"
+        android:icon="@drawable/ic_restaurant_black_24dp"
+        android:title="Food stock"/>
+    <item
+        android:id="@+id/nav_Scan"
+        android:icon="@drawable/ic_camera_alt_black_24dp"
+        android:title="Scan Receipts"/>
+</menu>
